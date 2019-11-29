@@ -1,0 +1,16 @@
+%a. Write a predicate to determine if a list has even numbers of
+% elements without co%unting the elements from
+%the list.
+%
+%evenNo(l1,..,ln,b) = true, b=False
+%                     false, b=true
+
+%evenNo(List l, int EvenOrNot) - l-initial list
+%(i,i)
+evenNo([H|T],1):- evenNo(T,0).
+evenNo([H|T],0):- evenNo(T,1).
+evenNo([],1).
+
+%evenNo([1,2,3],1)
+%evenNo([],1)
+%evenNo([1,2],1)

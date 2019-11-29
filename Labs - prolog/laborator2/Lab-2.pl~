@@ -1,0 +1,5 @@
+%evenNo(List l, int EvenOrNot)
+%(i,i)
+evenNo([H|T],1):- evenNo(T,0).
+evenNo([H|T],2):- evenNo(T,1).
+evenNo([],1).
